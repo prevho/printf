@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * parse_hex - substitute %x by unsigned int argument number
+ * print_hex - substitute %x by unsigned int argument number
  * @buff_dest: string to change
  * @arg: va_list arg to change
  * @buff_count: index of buffer where the o of %x is
  * Return: New index
  */
-int parse_hex(char *buff_dest, va_list arg, int buff_count)
+int print_hex(char *buff_dest, va_list arg, int buff_count)
 {
 	unsigned int number = va_arg(arg, unsigned int);
 	unsigned int tmp = number;
@@ -33,13 +33,13 @@ int parse_hex(char *buff_dest, va_list arg, int buff_count)
 }
 
 /**
- * parse_X - substitute %X by unsigned int argument number
+ * print_X - substitute %X by unsigned int argument number
  * @buff_dest: string to change
  * @arg: va_list arg to change
  * @buff_count: index of buffer where the o of %X is
  * Return: New index
  */
-int parse_X(char *buff_dest, va_list arg, int buff_count)
+int print_X(char *buff_dest, va_list arg, int buff_count)
 {
 	unsigned int number = va_arg(arg, unsigned int);
 	unsigned int tmp = number;

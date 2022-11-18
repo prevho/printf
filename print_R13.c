@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * parse_R13 - substitute %R by argument number in rot13
+ * print_R13 - substitute %R by argument number in rot13
  * @buff_dest: string to change
  * @arg: va_list char to change
  * @buff_count: index of dst where the R of %R is
  * Return: New index
  */
-int parse_R13(char *buff_dest, va_list arg, int buff_count)
+int print_R13(char *buff_dest, va_list arg, int buff_count)
 {
 	char *str;
 	char *keys = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
