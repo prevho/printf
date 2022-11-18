@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * print_int - substitute %i by argument number
+ * parse_int - substitute %i by argument number
  * @buff_dest: string to change
  * @arg: va_list arg to change
  * @buff_count: index of dst where the c of %c is
  * Return: New index
  */
-int print_int(char *buff_dest, va_list arg, int buff_count)
+int parse_int(char *buff_dest, va_list arg, int buff_count)
 {
 	int tens = 1;
 	unsigned int tmp;
